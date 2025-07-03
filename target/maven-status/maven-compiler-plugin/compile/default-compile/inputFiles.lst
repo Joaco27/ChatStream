@@ -1,0 +1,10 @@
+/mnt/c/Users/USUARIO/Desktop/PDyTRFinal/ChatStream/src/main/java/ar/edu/unlp/info/oo2/ChatStream/ChatServer.java
+/mnt/c/Users/USUARIO/Desktop/PDyTRFinal/ChatStream/src/main/java/ar/edu/unlp/info/oo2/ChatStream/ChatClient.java
+/mnt/c/Users/USUARIO/Desktop/PDyTRFinal/ChatStream/target/generated-sources/protobuf/grpc-java/chat/grpc/ChatServiceGrpc.java
+/mnt/c/Users/USUARIO/Desktop/PDyTRFinal/ChatStream/target/generated-sources/protobuf/java/chat/grpc/ChatMessage.java
+/mnt/c/Users/USUARIO/Desktop/PDyTRFinal/ChatStream/src/main/java/ar/edu/unlp/info/oo2/ChatStream/ChatClientN.java
+/mnt/c/Users/USUARIO/Desktop/PDyTRFinal/ChatStream/src/main/java/ar/edu/unlp/info/oo2/ChatStream/ChatServiceImpl.java
+/mnt/c/Users/USUARIO/Desktop/PDyTRFinal/ChatStream/src/main/java/ar/edu/unlp/info/oo2/ChatStream/RedisManagerJedis.java
+/mnt/c/Users/USUARIO/Desktop/PDyTRFinal/ChatStream/target/generated-sources/protobuf/java/chat/grpc/ChatMessageOrBuilder.java
+/mnt/c/Users/USUARIO/Desktop/PDyTRFinal/ChatStream/target/generated-sources/protobuf/java/chat/grpc/ChatServiceProto.java
+/mnt/c/Users/USUARIO/Desktop/PDyTRFinal/ChatStream/src/main/java/ar/edu/unlp/info/oo2/ChatStream/ConnectedClient.java

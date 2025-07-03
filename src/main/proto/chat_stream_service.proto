@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "chat.grpc";
+option java_outer_classname = "ChatServiceProto";
+
+package chat.grpc;
+
+message ChatMessage {
+  string username = 1;
+  string message = 2;
+  int64 timestamp = 3; // epoch millis
+  string id = 4;
+  string source = 5;
+}
+
+service ChatService {
+  rpc chat(stream ChatMessage) returns (stream ChatMessage);
+}
