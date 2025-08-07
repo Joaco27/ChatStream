@@ -4,8 +4,9 @@ N=${1:-1}                 # Número de clientes a lanzar
 MSGS=${2:-5}              # Mensajes por cliente (default 5)
 USER=${3:-usuario}        # Nombre de usuario base (default "usuario")
 
-echo "Creando red Docker backend-net si no existe..."
-docker network inspect backend-net >/dev/null 2>&1 || docker network create backend-net
+# Crear archivo de mensajes compartidos vacío
+rm -f resultados/resultados.txt
+touch resultados/resultados.txt
 
 echo "Reconstruyendo imagen sin cache..."
 docker-compose -f docker-compose-clients.yml build --no-cache

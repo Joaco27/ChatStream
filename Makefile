@@ -2,7 +2,7 @@
 
 # Compila el proyecto con Maven
 build:
-	mvn clean compile
+	mvn clean install
 
 # Ejecuta el servidor localmente
 server:
@@ -20,11 +20,11 @@ clientN:
 clean:
 	mvn clean
 
-# Levanta servidores y Redis con Docker Compose vía script
+# Levanta servidores con Docker Compose vía script
 levantar-servidores:
 	./levantar-servidores.sh
 
-# Baja servidores y Redis vía script
+# Baja servidores vía script
 bajar-servidores:
 	./bajar-servidores.sh
 

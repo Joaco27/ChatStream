@@ -39,7 +39,7 @@ public class ChatClient {
             		Long enviado = enviados.remove(msg.getId());
                     if (enviado != null) {
                         long rtt = System.currentTimeMillis() - enviado;
-                        System.out.println("Tiempo de respuesta: " + rtt + " ms");
+                        //System.out.println("Tiempo de respuesta: " + rtt + " ms");
                     }
             	}
             	else {
@@ -73,6 +73,7 @@ public class ChatClient {
                 .setUsername(username)
                 .setMessage("/connect")
                 .setTimestamp(System.currentTimeMillis())
+                .setSource("server-"+port)
                 .build();
         requestObserver.onNext(connectMsg);
 
@@ -84,15 +85,17 @@ public class ChatClient {
                 break;
             }
             String msgId = UUID.randomUUID().toString();
-            
+            long timestamp = System.currentTimeMillis();
+
             ChatMessage msg = ChatMessage.newBuilder()
                     .setUsername(username)
                     .setMessage(input)
-                    .setTimestamp(System.currentTimeMillis())
+                    .setTimestamp(timestamp)
                     .setId(msgId)
+                    .setSource("server-"+port)
                     .build();
-            
-            enviados.put(msgId, System.currentTimeMillis());
+
+            enviados.put(msgId, timestamp);
 
             requestObserver.onNext(msg);
         }

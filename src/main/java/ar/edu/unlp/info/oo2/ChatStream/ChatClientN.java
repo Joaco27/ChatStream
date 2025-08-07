@@ -15,8 +15,12 @@ import java.util.concurrent.*;
 public class ChatClientN {
 
     public static void main(String[] args) {
-        int port = 8080 + new Random().nextInt(2);
-        String host = "chatserver" + (port == 8080 ? "1" : "2");
+        int[] ports = {8080, 8081};
+        String[] hosts = {"chatserver1", "chatserver2"};
+
+        int idx = new Random().nextInt(ports.length);
+        String host = hosts[idx];
+        int port = ports[idx];
 
         int N = 5;
         String un = "user";
@@ -29,7 +33,7 @@ public class ChatClientN {
                 System.err.println("Cantidad de mensajes invalida, usando 5 por defecto.");
             }
         }
-        
+
         final String username = un;
         final String serverId = "server-" + port;
 
@@ -72,7 +76,7 @@ public class ChatClientN {
 
             @Override
             public void onCompleted() {
-                System.out.println("Conexion cerrada por el servidor.");
+                System.out.println("Conexion cerrada");
             }
         };
 
@@ -136,7 +140,7 @@ public class ChatClientN {
         System.out.println("Promedio de RTT " + N + " mensajes: " + promedio + " ms");
 
         try (PrintWriter writer = new PrintWriter(new FileWriter("resultados/resultados.txt", true))) {
-            writer.println(username+" PROMEDIO: " + promedio + " ms");
+            writer.println(username + " PROMEDIO: " + promedio + " ms");
         } catch (IOException e) {
             e.printStackTrace();
         }

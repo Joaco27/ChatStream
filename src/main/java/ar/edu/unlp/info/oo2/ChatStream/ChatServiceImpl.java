@@ -1,41 +1,100 @@
 package ar.edu.unlp.info.oo2.ChatStream;
 
 import chat.grpc.ChatMessage;
-import chat.grpc.ChatServiceGrpc.ChatServiceImplBase;
 import io.grpc.stub.StreamObserver;
-import com.google.protobuf.InvalidProtocolBufferException;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
-import java.util.Base64;
-import java.util.List;
-import java.util.UUID;
+import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
-public class ChatServiceImpl extends ChatServiceImplBase {
+public class ChatServiceImpl extends chat.grpc.ChatServiceGrpc.ChatServiceImplBase {
     private final List<ConnectedClient> connectedClients = new CopyOnWriteArrayList<>();
-    private final RedisManagerJedis redisManager;
-    private final String historialFile;
     private final String serverId;
+    private final File broadcastFile;
+    private final ExecutorService fileWatcherExecutor = Executors.newSingleThreadExecutor();
 
     public ChatServiceImpl(int port) {
         this.serverId = "server-" + port;
-        this.historialFile = "historiales/Historial-" + port + ".txt";
+        this.broadcastFile = new File("mensajes/mensajes-compartidos.txt");
 
-        if (port == 8080) {
-            try (FileWriter fileWriter = new FileWriter("resultados/resultados.txt", false)) {
-                fileWriter.write("");
+
+        if (!broadcastFile.exists()) {
+            try {
+                broadcastFile.getParentFile().mkdirs();
+                broadcastFile.createNewFile();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
 
-        this.redisManager = new RedisManagerJedis("redis", 6379, this::handleBroadcastMessage);
+        startFileWatcher();
+    }
+
+    private void startFileWatcher() {
+        fileWatcherExecutor.submit(() -> {
+            long lastPointer = 0;
+            while (true) {
+                try (RandomAccessFile raf = new RandomAccessFile(broadcastFile, "r")) {
+                    raf.seek(lastPointer);
+                    String line;
+                    while ((line = raf.readLine()) != null) {
+                        ChatMessage message = parseLogLine(line.trim());
+                        if (message != null && !message.getSource().equals(serverId)) {
+                            handleBroadcastMessage(message);
+                        }
+                    }
+                    lastPointer = raf.getFilePointer();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                try {
+                    Thread.sleep(200);
+                } catch (InterruptedException ignored) {}
+            }
+        });
+    }
+
+    private ChatMessage parseLogLine(String line) {
+        try {
+            // Formato: [dd/MM/yyyy HH:mm:ss] username (server-x): mensaje
+            int firstBracket = line.indexOf("]");
+            int secondColon = line.indexOf(":", firstBracket);
+
+            String timestampStr = line.substring(1, firstBracket).trim();
+            String header = line.substring(firstBracket + 1, secondColon).trim();
+            String message = line.substring(secondColon + 1).trim();
+
+            String[] parts = header.split(" ");
+            String username = parts[0];
+            String source = parts.length > 1 ? parts[1].replace("(", "").replace(")", "") : "";
+
+            long timestamp = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").parse(timestampStr).getTime();
+
+            return ChatMessage.newBuilder()
+                    .setUsername(username)
+                    .setMessage(message)
+                    .setTimestamp(timestamp)
+                    .setSource(source)
+                    .build();
+
+        } catch (Exception e) {
+            System.err.println("No se pudo parsear linea: " + line);
+            return null;
+        }
+    }
+
+    private void broadcast(ChatMessage msg) {
+        synchronized (broadcastFile) {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(broadcastFile, true))) {
+                writer.write(armarLog(msg) + System.lineSeparator());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override
@@ -51,9 +110,6 @@ public class ChatServiceImpl extends ChatServiceImplBase {
                     System.out.println("Usuario conectado: " + incomingMessage.getUsername());
                 }
 
-                
-
-                guardarEnHistorial(armarLog(incomingMessage));
 
                 for (ConnectedClient client : connectedClients) {
                     if (client.getStream() != responseObserver && !isCancelled(client.getStream())) {
@@ -65,8 +121,7 @@ public class ChatServiceImpl extends ChatServiceImplBase {
                     responseObserver.onNext(incomingMessage);
                 }
 
-                String encoded = Base64.getEncoder().encodeToString(incomingMessage.toByteArray());
-                redisManager.publish(encoded);
+                broadcast(incomingMessage);
             }
 
             @Override
@@ -81,7 +136,6 @@ public class ChatServiceImpl extends ChatServiceImplBase {
                         .setSource(serverId)
                         .build();
 
-                guardarEnHistorial(armarLog(disconnectMsg));
 
                 for (ConnectedClient client : connectedClients) {
                     if (!isCancelled(client.getStream())) {
@@ -89,7 +143,7 @@ public class ChatServiceImpl extends ChatServiceImplBase {
                     }
                 }
 
-                redisManager.publish(Base64.getEncoder().encodeToString(disconnectMsg.toByteArray()));
+                broadcast(disconnectMsg);
             }
 
             @Override
@@ -104,7 +158,6 @@ public class ChatServiceImpl extends ChatServiceImplBase {
                         .setSource(serverId)
                         .build();
 
-                guardarEnHistorial(armarLog(disconnectMsg));
 
                 for (ConnectedClient client : connectedClients) {
                     if (!isCancelled(client.getStream())) {
@@ -112,32 +165,19 @@ public class ChatServiceImpl extends ChatServiceImplBase {
                     }
                 }
 
-                redisManager.publish(Base64.getEncoder().encodeToString(disconnectMsg.toByteArray()));
+                broadcast(disconnectMsg);
                 responseObserver.onCompleted();
             }
         };
     }
 
-    private void handleBroadcastMessage(String base64Encoded) {
-        try {
-            byte[] decoded = Base64.getDecoder().decode(base64Encoded);
-            ChatMessage message = ChatMessage.parseFrom(decoded);
-
-            if (message.getSource().equals(serverId)) {
-                return; // Evitar re-procesar mensajes que origino este servidor
+    private void handleBroadcastMessage(ChatMessage message) {
+        for (ConnectedClient client : connectedClients) {
+            if (!isCancelled(client.getStream())) {
+                client.getStream().onNext(message);
             }
-
-            for (ConnectedClient client : connectedClients) {
-                if (!isCancelled(client.getStream())) {
-                    client.getStream().onNext(message);
-                }
-            }
-
-            guardarEnHistorial(armarLog(message));
-
-        } catch (InvalidProtocolBufferException e) {
-            System.err.println("Error al decodificar mensaje desde Redis: " + e.getMessage());
         }
+
     }
 
     private boolean isCancelled(StreamObserver<?> observer) {
@@ -146,28 +186,16 @@ public class ChatServiceImpl extends ChatServiceImplBase {
     }
 
     public String formatearTimeStamp(long timestamp) {
-        Instant instant = Instant.ofEpochMilli(timestamp);
-        LocalDateTime dateTime = LocalDateTime.ofInstant(instant, ZoneId.systemDefault());
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-        return "[" + dateTime.format(formatter) + "] ";
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        return sdf.format(new Date(timestamp));
     }
 
-    public void guardarEnHistorial(String contenido) {
-        File archivo = new File(this.historialFile);
-        try (FileWriter writer = new FileWriter(archivo, true)) {
-            writer.write(contenido + "\n");
-        } catch (IOException e) {
-            System.out.println("Ocurrio un error al escribir en el archivo: " + e.getMessage());
-        }
-    }
 
-    public String armarLog(ChatMessage m) {
-        if (m.getMessage().equals("/connect")) {
-            return formatearTimeStamp(m.getTimestamp()) + m.getUsername() + " se unio al chat";
-        } else if (m.getMessage().equals("/disconnect")) {
-            return formatearTimeStamp(m.getTimestamp()) + m.getUsername() + " salio del chat";
-        } else {
-            return formatearTimeStamp(m.getTimestamp()) + m.getUsername() + ": " + m.getMessage();
-        }
+    public String armarLog(ChatMessage message) {
+        return String.format("[%s] %s (%s): %s",
+                formatearTimeStamp(message.getTimestamp()),
+                message.getUsername(),
+                message.getSource(),
+                message.getMessage());
     }
 }

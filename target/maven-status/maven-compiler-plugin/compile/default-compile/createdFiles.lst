@@ -7,7 +7,6 @@ chat/grpc/ChatServiceGrpc.class
 chat/grpc/ChatServiceGrpc$ChatServiceBaseDescriptorSupplier.class
 chat/grpc/ChatServiceGrpc$AsyncService.class
 chat/grpc/ChatServiceGrpc$ChatServiceFileDescriptorSupplier.class
-ar/edu/unlp/info/oo2/ChatStream/RedisManagerJedis$1.class
 chat/grpc/ChatServiceGrpc$ChatServiceImplBase.class
 ar/edu/unlp/info/oo2/ChatStream/ChatServer.class
 chat/grpc/ChatServiceGrpc$ChatServiceFutureStub.class
@@ -23,6 +22,5 @@ ar/edu/unlp/info/oo2/ChatStream/ConnectedClient.class
 chat/grpc/ChatMessage$1.class
 chat/grpc/ChatServiceGrpc$MethodHandlers.class
 chat/grpc/ChatServiceProto.class
-ar/edu/unlp/info/oo2/ChatStream/RedisManagerJedis.class
 ar/edu/unlp/info/oo2/ChatStream/ChatClientN.class
 ar/edu/unlp/info/oo2/ChatStream/ChatClientN$1.class

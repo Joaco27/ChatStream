@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   chatserver1:
     build: .
@@ -9,8 +7,8 @@ services:
     networks:
       - backend-net
     volumes:
-      - ./historiales:/app/historiales
       - ./resultados:/app/resultados
+      - ./mensajes:/app/mensajes
 
   chatserver2:
     build: .
@@ -20,15 +18,8 @@ services:
     networks:
       - backend-net
     volumes:
-      - ./historiales:/app/historiales
       - ./resultados:/app/resultados
-
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "6379:6379"
-    networks:
-      - backend-net
+      - ./mensajes:/app/mensajes
 
 networks:
   backend-net:

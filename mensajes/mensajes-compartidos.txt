@@ -1,0 +1,400 @@
+[07/08/2025 17:44:09] usuario1 (server-8080): /connect
+[07/08/2025 17:44:09] usuario1 (server-8080): Hola, soy usuario1
+[07/08/2025 17:44:11] usuario1 (server-8080): /disconnect
+[07/08/2025 17:44:12] usuario2 (server-8081): /connect
+[07/08/2025 17:44:12] usuario2 (server-8081): Hola, soy usuario2
+[07/08/2025 17:44:13] usuario2 (server-8081): /disconnect
+[07/08/2025 17:44:13] usuario3 (server-8081): /connect
+[07/08/2025 17:44:13] usuario3 (server-8081): Hola, soy usuario3
+[07/08/2025 17:44:14] usuario3 (server-8081): /disconnect
+[07/08/2025 17:44:15] usuario4 (server-8080): /connect
+[07/08/2025 17:44:15] usuario4 (server-8080): Hola, soy usuario4
+[07/08/2025 17:44:17] usuario4 (server-8080): /disconnect
+[07/08/2025 17:44:15] usuario5 (server-8081): /connect
+[07/08/2025 17:44:15] usuario5 (server-8081): Hola, soy usuario5
+[07/08/2025 17:44:17] usuario5 (server-8081): /disconnect
+[07/08/2025 17:44:17] usuario6 (server-8081): /connect
+[07/08/2025 17:44:17] usuario6 (server-8081): Hola, soy usuario6
+[07/08/2025 17:44:19] usuario6 (server-8081): /disconnect
+[07/08/2025 17:44:19] usuario7 (server-8081): /connect
+[07/08/2025 17:44:19] usuario7 (server-8081): Hola, soy usuario7
+[07/08/2025 17:44:22] usuario7 (server-8081): /disconnect
+[07/08/2025 17:44:20] usuario8 (server-8081): /connect
+[07/08/2025 17:44:20] usuario8 (server-8081): Hola, soy usuario8
+[07/08/2025 17:44:22] usuario8 (server-8081): /disconnect
+[07/08/2025 17:44:22] usuario9 (server-8081): /connect
+[07/08/2025 17:44:22] usuario9 (server-8081): Hola, soy usuario9
+[07/08/2025 17:44:24] usuario9 (server-8081): /disconnect
+[07/08/2025 17:44:23] usuario10 (server-8080): /connect
+[07/08/2025 17:44:23] usuario10 (server-8080): Hola, soy usuario10
+[07/08/2025 17:44:25] usuario10 (server-8080): /disconnect
+[07/08/2025 17:44:25] usuario12 (server-8081): /connect
+[07/08/2025 17:44:25] usuario12 (server-8081): Hola, soy usuario12
+[07/08/2025 17:44:27] usuario12 (server-8081): /disconnect
+[07/08/2025 17:44:25] usuario11 (server-8080): /connect
+[07/08/2025 17:44:25] usuario11 (server-8080): Hola, soy usuario11
+[07/08/2025 17:44:27] usuario11 (server-8080): /disconnect
+[07/08/2025 17:44:26] usuario13 (server-8080): /connect
+[07/08/2025 17:44:26] usuario13 (server-8080): Hola, soy usuario13
+[07/08/2025 17:44:29] usuario13 (server-8080): /disconnect
+[07/08/2025 17:44:29] usuario14 (server-8080): /connect
+[07/08/2025 17:44:29] usuario14 (server-8080): Hola, soy usuario14
+[07/08/2025 17:44:31] usuario14 (server-8080): /disconnect
+[07/08/2025 17:44:30] usuario15 (server-8081): /connect
+[07/08/2025 17:44:30] usuario15 (server-8081): Hola, soy usuario15
+[07/08/2025 17:44:32] usuario15 (server-8081): /disconnect
+[07/08/2025 17:44:30] usuario16 (server-8081): /connect
+[07/08/2025 17:44:30] usuario16 (server-8081): Hola, soy usuario16
+[07/08/2025 17:44:32] usuario16 (server-8081): /disconnect
+[07/08/2025 17:44:32] usuario17 (server-8081): /connect
+[07/08/2025 17:44:32] usuario17 (server-8081): Hola, soy usuario17
+[07/08/2025 17:44:38] usuario17 (server-8081): /disconnect
+[07/08/2025 17:44:33] usuario18 (server-8080): /connect
+[07/08/2025 17:44:33] usuario18 (server-8080): Hola, soy usuario18
+[07/08/2025 17:44:39] usuario18 (server-8080): /disconnect
+[07/08/2025 17:44:34] usuario19 (server-8081): /connect
+[07/08/2025 17:44:34] usuario19 (server-8081): Hola, soy usuario19
+[07/08/2025 17:44:40] usuario19 (server-8081): /disconnect
+[07/08/2025 17:44:39] usuario20 (server-8081): /connect
+[07/08/2025 17:44:39] usuario20 (server-8081): Hola, soy usuario20
+[07/08/2025 17:44:42] usuario20 (server-8081): /disconnect
+[07/08/2025 17:44:40] usuario21 (server-8080): /connect
+[07/08/2025 17:44:40] usuario21 (server-8080): Hola, soy usuario21
+[07/08/2025 17:44:43] usuario21 (server-8080): /disconnect
+[07/08/2025 17:44:40] usuario22 (server-8081): /connect
+[07/08/2025 17:44:40] usuario22 (server-8081): Hola, soy usuario22
+[07/08/2025 17:44:44] usuario22 (server-8081): /disconnect
+[07/08/2025 17:44:43] usuario24 (server-8080): /connect
+[07/08/2025 17:44:43] usuario24 (server-8080): Hola, soy usuario24
+[07/08/2025 17:44:43] usuario23 (server-8081): /connect
+[07/08/2025 17:44:43] usuario23 (server-8081): Hola, soy usuario23
+[07/08/2025 17:44:46] usuario24 (server-8080): /disconnect
+[07/08/2025 17:44:46] usuario23 (server-8081): /disconnect
+[07/08/2025 17:44:45] usuario25 (server-8080): /connect
+[07/08/2025 17:44:45] usuario25 (server-8080): Hola, soy usuario25
+[07/08/2025 17:44:49] usuario25 (server-8080): /disconnect
+[07/08/2025 17:44:46] usuario26 (server-8081): /connect
+[07/08/2025 17:44:46] usuario26 (server-8081): Hola, soy usuario26
+[07/08/2025 17:44:46] usuario27 (server-8080): /connect
+[07/08/2025 17:44:46] usuario27 (server-8080): Hola, soy usuario27
+[07/08/2025 17:44:50] usuario26 (server-8081): /disconnect
+[07/08/2025 17:44:50] usuario27 (server-8080): /disconnect
+[07/08/2025 17:44:48] usuario28 (server-8081): /connect
+[07/08/2025 17:44:48] usuario28 (server-8081): Hola, soy usuario28
+[07/08/2025 17:44:52] usuario28 (server-8081): /disconnect
+[07/08/2025 17:44:50] usuario31 (server-8080): /connect
+[07/08/2025 17:44:50] usuario31 (server-8080): Hola, soy usuario31
+[07/08/2025 17:44:54] usuario31 (server-8080): /disconnect
+[07/08/2025 17:44:51] usuario29 (server-8080): /connect
+[07/08/2025 17:44:51] usuario29 (server-8080): Hola, soy usuario29
+[07/08/2025 17:44:54] usuario29 (server-8080): /disconnect
+[07/08/2025 17:44:51] usuario30 (server-8081): /connect
+[07/08/2025 17:44:51] usuario30 (server-8081): Hola, soy usuario30
+[07/08/2025 17:44:54] usuario30 (server-8081): /disconnect
+[07/08/2025 17:44:53] usuario32 (server-8081): /connect
+[07/08/2025 17:44:53] usuario32 (server-8081): Hola, soy usuario32
+[07/08/2025 17:44:58] usuario32 (server-8081): /disconnect
+[07/08/2025 17:44:54] usuario33 (server-8081): /connect
+[07/08/2025 17:44:54] usuario33 (server-8081): Hola, soy usuario33
+[07/08/2025 17:44:58] usuario33 (server-8081): /disconnect
+[07/08/2025 17:44:57] usuario35 (server-8081): /connect
+[07/08/2025 17:44:57] usuario35 (server-8081): Hola, soy usuario35
+[07/08/2025 17:44:57] usuario36 (server-8080): /connect
+[07/08/2025 17:44:57] usuario36 (server-8080): Hola, soy usuario36
+[07/08/2025 17:45:00] usuario35 (server-8081): /disconnect
+[07/08/2025 17:44:56] usuario34 (server-8080): /connect
+[07/08/2025 17:44:56] usuario34 (server-8080): Hola, soy usuario34
+[07/08/2025 17:45:01] usuario36 (server-8080): /disconnect
+[07/08/2025 17:45:01] usuario34 (server-8080): /disconnect
+[07/08/2025 17:44:58] usuario37 (server-8080): /connect
+[07/08/2025 17:44:58] usuario37 (server-8080): Hola, soy usuario37
+[07/08/2025 17:45:03] usuario37 (server-8080): /disconnect
+[07/08/2025 17:45:00] usuario38 (server-8081): /connect
+[07/08/2025 17:45:00] usuario38 (server-8081): Hola, soy usuario38
+[07/08/2025 17:45:03] usuario38 (server-8081): /disconnect
+[07/08/2025 17:45:02] usuario39 (server-8081): /connect
+[07/08/2025 17:45:02] usuario39 (server-8081): Hola, soy usuario39
+[07/08/2025 17:45:06] usuario39 (server-8081): /disconnect
+[07/08/2025 17:45:03] usuario40 (server-8081): /connect
+[07/08/2025 17:45:03] usuario40 (server-8081): Hola, soy usuario40
+[07/08/2025 17:45:06] usuario40 (server-8081): /disconnect
+[07/08/2025 17:45:04] usuario41 (server-8081): /connect
+[07/08/2025 17:45:04] usuario41 (server-8081): Hola, soy usuario41
+[07/08/2025 17:45:07] usuario41 (server-8081): /disconnect
+[07/08/2025 17:45:06] usuario42 (server-8081): /connect
+[07/08/2025 17:45:06] usuario43 (server-8081): /connect
+[07/08/2025 17:45:06] usuario42 (server-8081): Hola, soy usuario42
+[07/08/2025 17:45:06] usuario43 (server-8081): Hola, soy usuario43
+[07/08/2025 17:45:07] usuario43 (server-8081): /disconnect
+[07/08/2025 17:45:08] usuario42 (server-8081): /disconnect
+[07/08/2025 17:45:06] usuario44 (server-8081): /connect
+[07/08/2025 17:45:06] usuario44 (server-8081): Hola, soy usuario44
+[07/08/2025 17:45:11] usuario44 (server-8081): /disconnect
+[07/08/2025 17:45:06] usuario46 (server-8081): /connect
+[07/08/2025 17:45:06] usuario46 (server-8081): Hola, soy usuario46
+[07/08/2025 17:45:12] usuario46 (server-8081): /disconnect
+[07/08/2025 17:45:07] usuario45 (server-8081): /connect
+[07/08/2025 17:45:07] usuario45 (server-8081): Hola, soy usuario45
+[07/08/2025 17:45:12] usuario45 (server-8081): /disconnect
+[07/08/2025 17:45:07] usuario47 (server-8080): /connect
+[07/08/2025 17:45:07] usuario47 (server-8080): Hola, soy usuario47
+[07/08/2025 17:45:13] usuario47 (server-8080): /disconnect
+[07/08/2025 17:45:12] usuario48 (server-8080): /connect
+[07/08/2025 17:45:12] usuario50 (server-8080): /connect
+[07/08/2025 17:45:12] usuario48 (server-8080): Hola, soy usuario48
+[07/08/2025 17:45:12] usuario50 (server-8080): Hola, soy usuario50
+[07/08/2025 17:45:12] usuario49 (server-8081): /connect
+[07/08/2025 17:45:12] usuario49 (server-8081): Hola, soy usuario49
+[07/08/2025 17:45:13] usuario48 (server-8080): /disconnect
+[07/08/2025 17:45:13] usuario50 (server-8080): /disconnect
+[07/08/2025 17:45:13] usuario49 (server-8081): /disconnect
+[07/08/2025 17:46:19] usuario1 (server-8080): /connect
+[07/08/2025 17:46:19] usuario1 (server-8080): Hola, soy usuario1
+[07/08/2025 17:46:19] usuario1 (server-8080): Hola, soy usuario1
+[07/08/2025 17:46:19] usuario1 (server-8080): Hola, soy usuario1
+[07/08/2025 17:46:20] usuario1 (server-8080): /disconnect
+[07/08/2025 17:46:20] usuario2 (server-8081): /connect
+[07/08/2025 17:46:20] usuario2 (server-8081): Hola, soy usuario2
+[07/08/2025 17:46:20] usuario2 (server-8081): Hola, soy usuario2
+[07/08/2025 17:46:20] usuario2 (server-8081): Hola, soy usuario2
+[07/08/2025 17:46:21] usuario2 (server-8081): /disconnect
+[07/08/2025 17:46:22] usuario3 (server-8080): /connect
+[07/08/2025 17:46:22] usuario3 (server-8080): Hola, soy usuario3
+[07/08/2025 17:46:22] usuario3 (server-8080): Hola, soy usuario3
+[07/08/2025 17:46:22] usuario3 (server-8080): Hola, soy usuario3
+[07/08/2025 17:46:22] usuario3 (server-8080): /disconnect
+[07/08/2025 17:46:23] usuario4 (server-8080): /connect
+[07/08/2025 17:46:23] usuario4 (server-8080): Hola, soy usuario4
+[07/08/2025 17:46:23] usuario4 (server-8080): Hola, soy usuario4
+[07/08/2025 17:46:23] usuario4 (server-8080): Hola, soy usuario4
+[07/08/2025 17:46:24] usuario4 (server-8080): /disconnect
+[07/08/2025 17:46:25] usuario5 (server-8081): /connect
+[07/08/2025 17:46:25] usuario5 (server-8081): Hola, soy usuario5
+[07/08/2025 17:46:25] usuario5 (server-8081): Hola, soy usuario5
+[07/08/2025 17:46:25] usuario5 (server-8081): Hola, soy usuario5
+[07/08/2025 17:46:26] usuario5 (server-8081): /disconnect
+[07/08/2025 17:46:25] usuario6 (server-8080): /connect
+[07/08/2025 17:46:25] usuario6 (server-8080): Hola, soy usuario6
+[07/08/2025 17:46:25] usuario6 (server-8080): Hola, soy usuario6
+[07/08/2025 17:46:25] usuario6 (server-8080): Hola, soy usuario6
+[07/08/2025 17:46:26] usuario6 (server-8080): /disconnect
+[07/08/2025 17:46:26] usuario7 (server-8080): /connect
+[07/08/2025 17:46:26] usuario7 (server-8080): Hola, soy usuario7
+[07/08/2025 17:46:26] usuario7 (server-8080): Hola, soy usuario7
+[07/08/2025 17:46:26] usuario7 (server-8080): Hola, soy usuario7
+[07/08/2025 17:46:27] usuario7 (server-8080): /disconnect
+[07/08/2025 17:46:28] usuario8 (server-8080): /connect
+[07/08/2025 17:46:28] usuario8 (server-8080): Hola, soy usuario8
+[07/08/2025 17:46:28] usuario8 (server-8080): Hola, soy usuario8
+[07/08/2025 17:46:28] usuario8 (server-8080): Hola, soy usuario8
+[07/08/2025 17:46:29] usuario8 (server-8080): /disconnect
+[07/08/2025 17:46:29] usuario9 (server-8080): /connect
+[07/08/2025 17:46:29] usuario9 (server-8080): Hola, soy usuario9
+[07/08/2025 17:46:29] usuario9 (server-8080): Hola, soy usuario9
+[07/08/2025 17:46:29] usuario9 (server-8080): Hola, soy usuario9
+[07/08/2025 17:46:31] usuario9 (server-8080): /disconnect
+[07/08/2025 17:46:30] usuario10 (server-8080): /connect
+[07/08/2025 17:46:30] usuario10 (server-8080): Hola, soy usuario10
+[07/08/2025 17:46:30] usuario10 (server-8080): Hola, soy usuario10
+[07/08/2025 17:46:30] usuario10 (server-8080): Hola, soy usuario10
+[07/08/2025 17:46:32] usuario10 (server-8080): /disconnect
+[07/08/2025 17:46:32] usuario11 (server-8080): /connect
+[07/08/2025 17:46:32] usuario11 (server-8080): Hola, soy usuario11
+[07/08/2025 17:46:32] usuario11 (server-8080): Hola, soy usuario11
+[07/08/2025 17:46:32] usuario11 (server-8080): Hola, soy usuario11
+[07/08/2025 17:46:34] usuario11 (server-8080): /disconnect
+[07/08/2025 17:46:33] usuario12 (server-8080): /connect
+[07/08/2025 17:46:33] usuario12 (server-8080): Hola, soy usuario12
+[07/08/2025 17:46:33] usuario12 (server-8080): Hola, soy usuario12
+[07/08/2025 17:46:33] usuario12 (server-8080): Hola, soy usuario12
+[07/08/2025 17:46:34] usuario12 (server-8080): /disconnect
+[07/08/2025 17:46:34] usuario13 (server-8080): /connect
+[07/08/2025 17:46:34] usuario13 (server-8080): Hola, soy usuario13
+[07/08/2025 17:46:34] usuario13 (server-8080): Hola, soy usuario13
+[07/08/2025 17:46:34] usuario13 (server-8080): Hola, soy usuario13
+[07/08/2025 17:46:36] usuario13 (server-8080): /disconnect
+[07/08/2025 17:46:35] usuario14 (server-8080): /connect
+[07/08/2025 17:46:35] usuario14 (server-8080): Hola, soy usuario14
+[07/08/2025 17:46:36] usuario14 (server-8080): Hola, soy usuario14
+[07/08/2025 17:46:36] usuario14 (server-8080): Hola, soy usuario14
+[07/08/2025 17:46:37] usuario14 (server-8080): /disconnect
+[07/08/2025 17:46:36] usuario15 (server-8080): /connect
+[07/08/2025 17:46:36] usuario15 (server-8080): Hola, soy usuario15
+[07/08/2025 17:46:36] usuario15 (server-8080): Hola, soy usuario15
+[07/08/2025 17:46:37] usuario15 (server-8080): Hola, soy usuario15
+[07/08/2025 17:46:38] usuario15 (server-8080): /disconnect
+[07/08/2025 17:46:37] usuario16 (server-8081): /connect
+[07/08/2025 17:46:37] usuario16 (server-8081): Hola, soy usuario16
+[07/08/2025 17:46:37] usuario16 (server-8081): Hola, soy usuario16
+[07/08/2025 17:46:37] usuario16 (server-8081): Hola, soy usuario16
+[07/08/2025 17:46:39] usuario16 (server-8081): /disconnect
+[07/08/2025 17:46:39] usuario17 (server-8080): /connect
+[07/08/2025 17:46:39] usuario17 (server-8080): Hola, soy usuario17
+[07/08/2025 17:46:39] usuario17 (server-8080): Hola, soy usuario17
+[07/08/2025 17:46:39] usuario17 (server-8080): Hola, soy usuario17
+[07/08/2025 17:46:41] usuario17 (server-8080): /disconnect
+[07/08/2025 17:46:39] usuario18 (server-8080): /connect
+[07/08/2025 17:46:39] usuario18 (server-8080): Hola, soy usuario18
+[07/08/2025 17:46:39] usuario18 (server-8080): Hola, soy usuario18
+[07/08/2025 17:46:39] usuario18 (server-8080): Hola, soy usuario18
+[07/08/2025 17:46:41] usuario18 (server-8080): /disconnect
+[07/08/2025 17:46:42] usuario19 (server-8081): /connect
+[07/08/2025 17:46:42] usuario19 (server-8081): Hola, soy usuario19
+[07/08/2025 17:46:42] usuario19 (server-8081): Hola, soy usuario19
+[07/08/2025 17:46:42] usuario19 (server-8081): Hola, soy usuario19
+[07/08/2025 17:46:43] usuario19 (server-8081): /disconnect
+[07/08/2025 17:46:42] usuario20 (server-8081): /connect
+[07/08/2025 17:46:42] usuario20 (server-8081): Hola, soy usuario20
+[07/08/2025 17:46:42] usuario20 (server-8081): Hola, soy usuario20
+[07/08/2025 17:46:42] usuario20 (server-8081): Hola, soy usuario20
+[07/08/2025 17:46:44] usuario20 (server-8081): /disconnect
+[07/08/2025 17:46:43] usuario21 (server-8081): /connect
+[07/08/2025 17:46:43] usuario21 (server-8081): Hola, soy usuario21
+[07/08/2025 17:46:43] usuario21 (server-8081): Hola, soy usuario21
+[07/08/2025 17:46:43] usuario21 (server-8081): Hola, soy usuario21
+[07/08/2025 17:46:45] usuario21 (server-8081): /disconnect
+[07/08/2025 17:46:45] usuario22 (server-8081): /connect
+[07/08/2025 17:46:45] usuario22 (server-8081): Hola, soy usuario22
+[07/08/2025 17:46:45] usuario22 (server-8081): Hola, soy usuario22
+[07/08/2025 17:46:45] usuario22 (server-8081): Hola, soy usuario22
+[07/08/2025 17:46:47] usuario22 (server-8081): /disconnect
+[07/08/2025 17:46:45] usuario23 (server-8081): /connect
+[07/08/2025 17:46:45] usuario23 (server-8081): Hola, soy usuario23
+[07/08/2025 17:46:46] usuario23 (server-8081): Hola, soy usuario23
+[07/08/2025 17:46:46] usuario23 (server-8081): Hola, soy usuario23
+[07/08/2025 17:46:47] usuario23 (server-8081): /disconnect
+[07/08/2025 17:46:46] usuario24 (server-8080): /connect
+[07/08/2025 17:46:46] usuario24 (server-8080): Hola, soy usuario24
+[07/08/2025 17:46:47] usuario24 (server-8080): Hola, soy usuario24
+[07/08/2025 17:46:47] usuario24 (server-8080): Hola, soy usuario24
+[07/08/2025 17:46:52] usuario24 (server-8080): /disconnect
+[07/08/2025 17:46:51] usuario25 (server-8080): /connect
+[07/08/2025 17:46:51] usuario25 (server-8080): Hola, soy usuario25
+[07/08/2025 17:46:51] usuario25 (server-8080): Hola, soy usuario25
+[07/08/2025 17:46:51] usuario25 (server-8080): Hola, soy usuario25
+[07/08/2025 17:46:53] usuario25 (server-8080): /disconnect
+[07/08/2025 17:46:53] usuario26 (server-8081): /connect
+[07/08/2025 17:46:53] usuario26 (server-8081): Hola, soy usuario26
+[07/08/2025 17:46:53] usuario26 (server-8081): Hola, soy usuario26
+[07/08/2025 17:46:53] usuario26 (server-8081): Hola, soy usuario26
+[07/08/2025 17:46:55] usuario26 (server-8081): /disconnect
+[07/08/2025 17:46:54] usuario28 (server-8081): /connect
+[07/08/2025 17:46:54] usuario28 (server-8081): Hola, soy usuario28
+[07/08/2025 17:46:55] usuario27 (server-8081): /connect
+[07/08/2025 17:46:55] usuario28 (server-8081): Hola, soy usuario28
+[07/08/2025 17:46:55] usuario27 (server-8081): Hola, soy usuario27
+[07/08/2025 17:46:55] usuario28 (server-8081): Hola, soy usuario28
+[07/08/2025 17:46:55] usuario27 (server-8081): Hola, soy usuario27
+[07/08/2025 17:46:55] usuario27 (server-8081): Hola, soy usuario27
+[07/08/2025 17:46:57] usuario28 (server-8081): /disconnect
+[07/08/2025 17:46:58] usuario27 (server-8081): /disconnect
+[07/08/2025 17:46:56] usuario29 (server-8081): /connect
+[07/08/2025 17:46:56] usuario29 (server-8081): Hola, soy usuario29
+[07/08/2025 17:46:56] usuario29 (server-8081): Hola, soy usuario29
+[07/08/2025 17:46:56] usuario29 (server-8081): Hola, soy usuario29
+[07/08/2025 17:46:59] usuario29 (server-8081): /disconnect
+[07/08/2025 17:46:57] usuario30 (server-8081): /connect
+[07/08/2025 17:46:57] usuario30 (server-8081): Hola, soy usuario30
+[07/08/2025 17:46:57] usuario30 (server-8081): Hola, soy usuario30
+[07/08/2025 17:46:57] usuario30 (server-8081): Hola, soy usuario30
+[07/08/2025 17:47:00] usuario30 (server-8081): /disconnect
+[07/08/2025 17:46:58] usuario31 (server-8080): /connect
+[07/08/2025 17:46:58] usuario31 (server-8080): Hola, soy usuario31
+[07/08/2025 17:46:58] usuario31 (server-8080): Hola, soy usuario31
+[07/08/2025 17:46:58] usuario31 (server-8080): Hola, soy usuario31
+[07/08/2025 17:47:01] usuario31 (server-8080): /disconnect
+[07/08/2025 17:47:01] usuario32 (server-8080): /connect
+[07/08/2025 17:47:01] usuario32 (server-8080): Hola, soy usuario32
+[07/08/2025 17:47:01] usuario32 (server-8080): Hola, soy usuario32
+[07/08/2025 17:47:01] usuario32 (server-8080): Hola, soy usuario32
+[07/08/2025 17:47:03] usuario32 (server-8080): /disconnect
+[07/08/2025 17:47:01] usuario33 (server-8081): /connect
+[07/08/2025 17:47:01] usuario33 (server-8081): Hola, soy usuario33
+[07/08/2025 17:47:01] usuario33 (server-8081): Hola, soy usuario33
+[07/08/2025 17:47:01] usuario33 (server-8081): Hola, soy usuario33
+[07/08/2025 17:47:04] usuario33 (server-8081): /disconnect
+[07/08/2025 17:47:04] usuario35 (server-8080): /connect
+[07/08/2025 17:47:04] usuario35 (server-8080): Hola, soy usuario35
+[07/08/2025 17:47:04] usuario35 (server-8080): Hola, soy usuario35
+[07/08/2025 17:47:04] usuario35 (server-8080): Hola, soy usuario35
+[07/08/2025 17:47:06] usuario35 (server-8080): /disconnect
+[07/08/2025 17:47:03] usuario34 (server-8081): /connect
+[07/08/2025 17:47:03] usuario34 (server-8081): Hola, soy usuario34
+[07/08/2025 17:47:03] usuario34 (server-8081): Hola, soy usuario34
+[07/08/2025 17:47:03] usuario34 (server-8081): Hola, soy usuario34
+[07/08/2025 17:47:07] usuario34 (server-8081): /disconnect
+[07/08/2025 17:47:04] usuario36 (server-8081): /connect
+[07/08/2025 17:47:04] usuario36 (server-8081): Hola, soy usuario36
+[07/08/2025 17:47:04] usuario36 (server-8081): Hola, soy usuario36
+[07/08/2025 17:47:04] usuario36 (server-8081): Hola, soy usuario36
+[07/08/2025 17:47:07] usuario36 (server-8081): /disconnect
+[07/08/2025 17:47:06] usuario37 (server-8081): /connect
+[07/08/2025 17:47:06] usuario37 (server-8081): Hola, soy usuario37
+[07/08/2025 17:47:06] usuario37 (server-8081): Hola, soy usuario37
+[07/08/2025 17:47:06] usuario37 (server-8081): Hola, soy usuario37
+[07/08/2025 17:47:10] usuario37 (server-8081): /disconnect
+[07/08/2025 17:47:07] usuario38 (server-8081): /connect
+[07/08/2025 17:47:07] usuario38 (server-8081): Hola, soy usuario38
+[07/08/2025 17:47:07] usuario38 (server-8081): Hola, soy usuario38
+[07/08/2025 17:47:07] usuario38 (server-8081): Hola, soy usuario38
+[07/08/2025 17:47:11] usuario38 (server-8081): /disconnect
+[07/08/2025 17:47:08] usuario39 (server-8081): /connect
+[07/08/2025 17:47:08] usuario39 (server-8081): Hola, soy usuario39
+[07/08/2025 17:47:08] usuario39 (server-8081): Hola, soy usuario39
+[07/08/2025 17:47:09] usuario39 (server-8081): Hola, soy usuario39
+[07/08/2025 17:47:12] usuario39 (server-8081): /disconnect
+[07/08/2025 17:47:10] usuario40 (server-8081): /connect
+[07/08/2025 17:47:10] usuario40 (server-8081): Hola, soy usuario40
+[07/08/2025 17:47:10] usuario40 (server-8081): Hola, soy usuario40
+[07/08/2025 17:47:10] usuario40 (server-8081): Hola, soy usuario40
+[07/08/2025 17:47:13] usuario40 (server-8081): /disconnect
+[07/08/2025 17:47:11] usuario41 (server-8081): /connect
+[07/08/2025 17:47:11] usuario41 (server-8081): Hola, soy usuario41
+[07/08/2025 17:47:11] usuario41 (server-8081): Hola, soy usuario41
+[07/08/2025 17:47:11] usuario41 (server-8081): Hola, soy usuario41
+[07/08/2025 17:47:13] usuario41 (server-8081): /disconnect
+[07/08/2025 17:47:12] usuario42 (server-8080): /connect
+[07/08/2025 17:47:12] usuario42 (server-8080): Hola, soy usuario42
+[07/08/2025 17:47:12] usuario42 (server-8080): Hola, soy usuario42
+[07/08/2025 17:47:12] usuario42 (server-8080): Hola, soy usuario42
+[07/08/2025 17:47:12] usuario43 (server-8081): /connect
+[07/08/2025 17:47:14] usuario42 (server-8080): /disconnect
+[07/08/2025 17:47:12] usuario43 (server-8081): Hola, soy usuario43
+[07/08/2025 17:47:12] usuario43 (server-8081): Hola, soy usuario43
+[07/08/2025 17:47:13] usuario43 (server-8081): Hola, soy usuario43
+[07/08/2025 17:47:15] usuario43 (server-8081): /disconnect
+[07/08/2025 17:47:14] usuario44 (server-8081): /connect
+[07/08/2025 17:47:14] usuario44 (server-8081): Hola, soy usuario44
+[07/08/2025 17:47:14] usuario44 (server-8081): Hola, soy usuario44
+[07/08/2025 17:47:14] usuario44 (server-8081): Hola, soy usuario44
+[07/08/2025 17:47:16] usuario44 (server-8081): /disconnect
+[07/08/2025 17:47:15] usuario45 (server-8080): /connect
+[07/08/2025 17:47:15] usuario45 (server-8080): Hola, soy usuario45
+[07/08/2025 17:47:15] usuario45 (server-8080): Hola, soy usuario45
+[07/08/2025 17:47:15] usuario45 (server-8080): Hola, soy usuario45
+[07/08/2025 17:47:15] usuario46 (server-8080): /connect
+[07/08/2025 17:47:15] usuario46 (server-8080): Hola, soy usuario46
+[07/08/2025 17:47:15] usuario46 (server-8080): Hola, soy usuario46
+[07/08/2025 17:47:15] usuario46 (server-8080): Hola, soy usuario46
+[07/08/2025 17:47:16] usuario45 (server-8080): /disconnect
+[07/08/2025 17:47:16] usuario46 (server-8080): /disconnect
+[07/08/2025 17:47:16] usuario47 (server-8081): /connect
+[07/08/2025 17:47:16] usuario47 (server-8081): Hola, soy usuario47
+[07/08/2025 17:47:16] usuario47 (server-8081): Hola, soy usuario47
+[07/08/2025 17:47:16] usuario47 (server-8081): Hola, soy usuario47
+[07/08/2025 17:47:17] usuario47 (server-8081): /disconnect
+[07/08/2025 17:47:16] usuario48 (server-8080): /connect
+[07/08/2025 17:47:16] usuario48 (server-8080): Hola, soy usuario48
+[07/08/2025 17:47:16] usuario48 (server-8080): Hola, soy usuario48
+[07/08/2025 17:47:16] usuario48 (server-8080): Hola, soy usuario48
+[07/08/2025 17:47:17] usuario48 (server-8080): /disconnect
+[07/08/2025 17:47:17] usuario50 (server-8080): /connect
+[07/08/2025 17:47:17] usuario50 (server-8080): Hola, soy usuario50
+[07/08/2025 17:47:17] usuario50 (server-8080): Hola, soy usuario50
+[07/08/2025 17:47:17] usuario50 (server-8080): Hola, soy usuario50
+[07/08/2025 17:47:18] usuario50 (server-8080): /disconnect
+[07/08/2025 17:47:17] usuario49 (server-8081): /connect
+[07/08/2025 17:47:17] usuario49 (server-8081): Hola, soy usuario49
+[07/08/2025 17:47:17] usuario49 (server-8081): Hola, soy usuario49
+[07/08/2025 17:47:17] usuario49 (server-8081): Hola, soy usuario49
+[07/08/2025 17:47:18] usuario49 (server-8081): /disconnect
